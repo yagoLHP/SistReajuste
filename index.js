@@ -38,17 +38,17 @@ server.get('/reajuste', (req, resp) => {
     } else {
         if (idade >= 18 && idade <= 39) {
             if (sexo === 'M') {
-                reajuste = salario * 0.10 / 100;
+                reajuste = salario * 0.10;
                 newSalario = salario + reajuste;
-                if (2025 - ano >= 1960) {
+                if (2025 - ano > 10) {
                     newSalario = newSalario + 17;
                 } else {
                     newSalario = newSalario - 10;
                 }
             } else if (sexo === 'F') {
-                reajuste = salario * 0.08 / 100;
+                reajuste = salario * 0.08;
                 newSalario = salario + reajuste;
-                if (2025 - ano >= 1960) {
+                if (2025 - ano > 10) {
                     newSalario = newSalario + 16;
                 } else {
                     newSalario = newSalario - 11;
@@ -56,17 +56,17 @@ server.get('/reajuste', (req, resp) => {
             }
         } else if (idade >= 40 && idade <= 69) {
             if (sexo === 'M') {
-                reajuste = salario * 0.08 / 100;
+                reajuste = salario * 0.08;
                 newSalario = salario + reajuste;
-                if (2025 - ano >= 1960) {
+                if (2025 - ano > 10) {
                     newSalario = newSalario + 15;
                 } else {
                     newSalario = newSalario - 5;
                 }
             } else if (sexo === 'F') {
-                reajuste = salario * 0.10 / 100;
+                reajuste = salario * 0.10;
                 newSalario = salario + reajuste;
-                if (2025 - ano >= 1960) {
+                if (2025 - ano > 10) {
                     newSalario = newSalario + 14;
                 } else {
                     newSalario = newSalario - 15;
@@ -74,17 +74,17 @@ server.get('/reajuste', (req, resp) => {
             }
         } else if (idade >= 70 && idade <= 99) {
             if (sexo === 'M') {
-                reajuste = salario * 0.15 / 100;
+                reajuste = salario * 0.15;
                 newSalario = salario + reajuste;
-                if (2025 - ano >= 1960) {
+                if (2025 - ano > 10) {
                     newSalario = newSalario + 13;
                 } else {
                     newSalario = newSalario - 12;
                 }
             } else if (sexo === 'F') {
-                reajuste = salario * 0.17 / 100;
+                reajuste = salario * 0.17;
                 newSalario = salario + reajuste;
-                if (2025 - ano >= 1960) {
+                if (2025 - ano > 10) {
                     newSalario = newSalario + 12;
                 } else {
                     newSalario = newSalario - 17;
@@ -93,8 +93,12 @@ server.get('/reajuste', (req, resp) => {
         }
 
         mensagem = `
-            Salário Atual: ${salario}
-            Reajuste: ${reajuste}
+            Matrícula: ${matricula}<br>
+            Idade: ${idade}<br>
+            Sexo: ${sexo}<br>
+            Ano de Contratação: ${ano}<br>
+            Salário Atual: ${salario}<br>
+            Reajuste: ${reajuste}<br>
             Novo Salário: ${newSalario}
         `;
     }
