@@ -1,0 +1,29 @@
+{
+  "name": "sistreajuste-1",
+  "version": "1.0.0",
+  "description": "Sistema de Reajuste",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yagoLHP/SistReajuste.git"
+  },
+  "keywords": [
+    "HTTP",
+    "NODE",
+    "PPI"
+  ],
+  "author": "Yago Malcom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yagoLHP/SistReajuste/issues"
+  },
+  "homepage": "https://github.com/yagoLHP/SistReajuste#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
