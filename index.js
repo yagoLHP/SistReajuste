@@ -93,12 +93,12 @@ server.get('/reajuste', (req, resp) => {
         }
 
         mensagem = `
-            Matrícula: ${matricula}
-            Idade: ${idade}
-            Sexo: ${sexo}
-            Ano de Contratação: ${ano}
-            Salário Atual: ${salario}
-            Reajuste: ${reajuste}
+            Matrícula: ${matricula},
+            Idade: ${idade},
+            Sexo: ${sexo},
+            Ano de Contratação: ${ano},
+            Salário Atual: ${salario},
+            Reajuste: ${reajuste} e
             Novo Salário: ${newSalario}
         `;
     }
