@@ -99,9 +99,9 @@ server.get('/reajuste', (req, resp) => {
             Idade: ${idade}, 
             Sexo: ${sexo}, 
             Ano de Contratação: ${ano}, 
-            Salário Atual: ${salario}, 
-            <strong>Reajuste: ${reajuste}</strong> e 
-            Novo Salário: ${newSalario}
+            Salário Atual: R$${salario}, 
+            <strong>Reajuste: R$${reajuste}</strong> e 
+            Novo Salário: R$${newSalario}
         `;
     }
 
