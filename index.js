@@ -17,6 +17,9 @@ server.get('/reajuste', (req, resp) => {
     var newSalario = salario;
     var mensagem = '';
 
+        mensagem = `Insira as informações no endereço URL:
+        exemplo: https://sist-reajuste.vercel.app/reajuste?idade=18&sexo=F&salario=1700&ano=2014&matricula=12345`; 
+
     if (!idade || !salario || !ano || !matricula) {
         mensagem = `
             <!DOCTYPE html>
