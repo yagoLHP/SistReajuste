@@ -100,7 +100,7 @@ server.get('/reajuste', (req, resp) => {
             Sexo: ${sexo}, 
             Ano de Contratação: ${ano}, 
             Salário Atual: ${salario}, 
-            Reajuste: ${reajuste} e 
+            <strong>Reajuste: ${reajuste}</strong> e 
             Novo Salário: ${newSalario}
         `;
     }
