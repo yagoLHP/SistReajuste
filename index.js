@@ -17,9 +17,6 @@ server.get('/reajuste', (req, resp) => {
     var newSalario = salario;
     var mensagem = '';
 
-        mensagem = `Insira as informações no endereço URL:
-        exemplo: https://sist-reajuste.vercel.app/reajuste?idade=18&sexo=F&salario=1700&ano=2014&matricula=12345`; 
-
     if (!idade || !salario || !ano || !matricula) {
         mensagem = `
             <!DOCTYPE html>
@@ -32,7 +29,9 @@ server.get('/reajuste', (req, resp) => {
             </head>
             <body>
                 <h1>Requisições insuficientes!</h1>
-                <h2>Por favor, informe corretamente a idade, salário, ano e matrícula!</h2>
+                <h2>Por favor, informe corretamente a idade, salário, ano e matrícula!
+                Insira as informações no endereço URL:
+                exemplo: https://sist-reajuste.vercel.app/reajuste?idade=18&sexo=F&salario=1700&ano=2014&matricula=12345</h2>
             </body>
             </html>
         `;
